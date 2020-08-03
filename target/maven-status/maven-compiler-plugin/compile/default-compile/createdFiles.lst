@@ -1,0 +1,8 @@
+com\prakash\docker\urlshortening\service\URLShortService.class
+com\prakash\docker\urlshortening\service\GenerateUUIDService.class
+com\prakash\docker\urlshortening\service\ShortUrlGenrator.class
+com\prakash\docker\urlshortening\MAIN\Application.class
+com\prakash\docker\urlshortening\controller\URLSHortController.class
+com\prakash\docker\urlshortening\config\SwaggerConfig.class
+com\prakash\docker\urlshortening\dto\UrlShortRequest.class
+com\prakash\docker\urlshortening\repository\InMemoryRepository.class
