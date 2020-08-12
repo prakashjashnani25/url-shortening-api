@@ -18,7 +18,7 @@ public class UrlShortRequest {
 	@ApiModelProperty(notes="Optional Expiiration Time")
 	private LocalDateTime expireDate;
 
-	private Integer id;
+	private Long id;
 	
 	private  String shortUrl;
 	
@@ -39,11 +39,11 @@ public class UrlShortRequest {
 		this.expireDate = expireDate;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -55,6 +55,11 @@ public class UrlShortRequest {
 		this.shortUrl = shortUrl;
 	}
 
+	@Override
+	public String toString() {
+		return "UrlShortRequest [longUrl=" + longUrl + ", id=" + id + ", shortUrl=" + shortUrl + "]";
+	}
 
+	
 	
 }

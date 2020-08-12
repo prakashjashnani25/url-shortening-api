@@ -15,7 +15,7 @@ public class ShortUrlGenrator {
 		
 	}
 	
-	public String encode(int number) {
+	public String encode(Long number) {
 		// TODO Auto-generated method stub
 		StringBuilder encodedString=new StringBuilder();
 		
@@ -23,7 +23,7 @@ public class ShortUrlGenrator {
 			return allowedChars[0]+"";
 		
 		while(number>0) {
-			encodedString.append(allowedChars[number%BASE]);	
+			encodedString.append(allowedChars[(int) (number%BASE)]);	
 			number=number/BASE;
 		}
 		return encodedString.reverse().toString();

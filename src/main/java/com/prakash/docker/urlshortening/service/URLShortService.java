@@ -20,7 +20,7 @@ public class URLShortService {
 	
 	
 	public String createShortUrl(UrlShortRequest request) {
-		int number = uniqueSequenceGenerator.getUniqueBase10Number();
+		Long number = uniqueSequenceGenerator.getUniqueBase10Number();
 		String shortUrl=urlGenerator.encode(number);
 		request.setId(number);
 		request.setShortUrl(shortUrl);

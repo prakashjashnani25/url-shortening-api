@@ -1,4 +1,4 @@
-package com.prakash.docker.urlshortening.MAIN;
+package com.prakash.docker.urlshortening;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
